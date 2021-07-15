@@ -26,7 +26,7 @@ const renderLicenseSection = license => {
   } else {
     return `## License
     
-    Licensed for use with the ${license} license.`;
+Licensed for use with the ${license} license.`;
   }
 };
 
