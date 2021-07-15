@@ -1,10 +1,10 @@
-# README Generator
+# t
 
 ![License](https://img.shields.io/badge/License-MIT-<blue>)
 
 ## Description
 
-Commandline app that generates a quality README.md based on user input.
+t
 
 ## Table of Contents
 
@@ -23,11 +23,14 @@ Commandline app that generates a quality README.md based on user input.
 ## Installation
 
 To install program please run:
-install npm
+
+```
+t
+```
 
 ## Usage
 
-create readme
+t
 
 ## License
     
@@ -35,18 +38,21 @@ Licensed for use with the MIT license.
 
 ## Contributing
 
-contact me
+tt
 
 ## Tests
 
 To test, please run:
-node index.js
+
+```
+t
+```
 
 ## Questions
 
 To view my other work, go to: 
-[TylerLadas](https://github.com/TylerLadas/)
+[t](https://github.com/t/)
 
 For questions and inquiries contact me at:
-TylerLadas@hotmail.com
+t
 

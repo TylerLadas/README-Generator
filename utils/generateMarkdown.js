@@ -55,7 +55,10 @@ ${renderLicenseLink(data.license)}
 ## Installation
 
 To install program please run:
+
+\`\`\`
 ${data.installation}
+\`\`\`
 
 ## Usage
 
@@ -70,7 +73,10 @@ ${data.contribution}
 ## Tests
 
 To test, please run:
+
+\`\`\`
 ${data.test}
+\`\`\`
 
 ## Questions
 
