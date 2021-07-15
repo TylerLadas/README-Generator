@@ -1,5 +1,5 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
+// Function that returns a license badge based on which license is passed in
+
 const renderLicenseBadge = license => {
   if (license === "none") {
     return "";
@@ -8,8 +8,8 @@ const renderLicenseBadge = license => {
   }
 };
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
+// Function that returns the license link
+
 const renderLicenseLink = license => {
   if (license === "none") {
     return "";
@@ -18,8 +18,8 @@ const renderLicenseLink = license => {
   }
 };
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
+// Function that returns the license section of README
+
 const renderLicenseSection = license => {
   if (license === "none") {
     return "";
@@ -30,7 +30,7 @@ const renderLicenseSection = license => {
   }
 };
 
-// TODO: Create a function to generate markdown for README
+// Function to generate markdown for README
 const generateMarkdown = data => {
   return `# ${data.title}
 
@@ -55,7 +55,7 @@ ${renderLicenseLink(data.license)}
 ## Installation
 
 To install program please run:
-${data.installation}
+``${data.installation}``
 
 ## Usage
 
@@ -70,12 +70,12 @@ ${data.contribution}
 ## Tests
 
 To test, please run:
-${data.test}
+``${data.test}``
 
 ## Questions
 
 To view my other work, go to: 
-[${data.github}](https://github.com/${data.github})
+[${data.github}](https://github.com/${data.github}/)
 
 For questions and inquiries contact me at:
 ${data.email}
