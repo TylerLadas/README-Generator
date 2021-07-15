@@ -26,12 +26,12 @@ const renderLicenseSection = license => {
   } else {
     return `## License
     
-    Licensed for use with the ${data.license} license.`;
+    Licensed for use with the ${license} license.`;
   }
 };
 
 // Function to generate markdown for README
-const generateMarkdown = data => {
+let generateMarkdown = data => {
   return `# ${data.title}
 
 ${renderLicenseBadge(data.license)}
@@ -55,7 +55,7 @@ ${renderLicenseLink(data.license)}
 ## Installation
 
 To install program please run:
-``${data.installation}``
+${data.installation}
 
 ## Usage
 
@@ -70,7 +70,7 @@ ${data.contribution}
 ## Tests
 
 To test, please run:
-``${data.test}``
+${data.test}
 
 ## Questions
 

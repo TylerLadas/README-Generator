@@ -1,7 +1,7 @@
 // Required packages 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const generateMarkdown = require('generateMarkdown');
+const generateMarkdown = require('./utils/generateMarkdown');
 
 // Questions array
 const questions = [
@@ -55,7 +55,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 const writeToFile = (fileName, data) => {
-
+    return fs.writeFileSync(fileName, data)
 }
 
 // TODO: Create a function to initialize app
@@ -63,7 +63,7 @@ const init = () => {
     inquirer.prompt(questions)
     .then((data) => {
         console.log("Creating README...");
-        writeToFile();
+        return writeToFile('./README.md', generateMarkdown(data));
     })
     .catch (err => console.log(err));
 };
