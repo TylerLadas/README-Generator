@@ -1,10 +1,10 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = license => {
-  if (license) {
-    return 
+  if (license === "none") {
+    return ""
   } else {
-    return "";
+    return `![License](https://img.shields.io/badge/License-${license}-<blue>)`;
   }
 };
 
