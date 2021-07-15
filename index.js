@@ -1,64 +1,72 @@
-// TODO: Include packages needed for this application
+// Required packages 
 const fs = require('fs');
 const inquirer = require('inquirer');
-// TODO: Create an array of questions for user input
-const questions = () => {
-    return inquirer.prompt([
-        {
-            type: 'input',
-            name: 'title',
-            message: 'What is the title of your project?'
-        },
-        {
-            type: 'input',
-            name: 'description',
-            message: 'Provide a description of the project'
-        },
-        {
-            type: 'input',
-            name: 'installation',
-            message: 'Provide installation instructions'
-        },
-        {
-            type: 'input',
-            name: 'usage',
-            message: 'Provide usage information'
-        },
-        {
-            type: 'input',
-            name: 'contribution',
-            message: 'Provide contribution guidelines'
-        },
-        {
-            type: 'input',
-            name: 'test',
-            message: 'Provide test instructions'
-        },
-        {
-            type: 'list',
-            name: 'license',
-            message: 'Select a use license',
-            choices: ['MIT', 'Apache 2.0', 'GPLv3', 'BSD-3', 'none']
-        },
-        {
-            type: 'input',
-            name: 'github',
-            message: 'Enter your GitHub username'
-        },
-        {
-            type: 'input',
-            name: 'email',
-            message: 'Enter your email address'
-        }
-    ])
-}
+const generateMarkdown = require('generateMarkdown');
+
+// Questions array
+const questions = [
+    {
+        type: 'input',
+        name: 'title',
+        message: 'What is the title of your project?'
+    },
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Provide a description of the project'
+    },
+    {
+        type: 'input',
+        name: 'installation',
+        message: 'Provide installation instructions'
+    },
+    {
+        type: 'input',
+        name: 'usage',
+        message: 'Provide usage information'
+    },
+    {
+        type: 'input',
+        name: 'contribution',
+        message: 'Provide contribution guidelines'
+    },
+    {
+        type: 'input',
+        name: 'test',
+        message: 'Provide test instructions'
+    },
+    {
+        type: 'list',
+        name: 'license',
+        message: 'Select a use license',
+        choices: ['MIT', 'Apache 2.0', 'GPLv3', 'BSD-3', 'none']
+    },
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Enter your GitHub username'
+    },
+    {
+        type: 'input',
+        name: 'email',
+        message: 'Enter your email address'
+    }
+];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+const writeToFile = (fileName, data) => {
+
+}
 
 // TODO: Create a function to initialize app
-function init() {}
+const init = () => {
+    inquirer.prompt(questions)
+    .then((answers) => {
+        console.log("Creating README...");
+        writeToFile();
+    })
+    .catch (err => console.log(err));
+};
 
 // Function call to initialize app
 init();
-questions();
