@@ -63,7 +63,7 @@ const init = () => {
     inquirer.prompt(questions)
     .then((data) => {
         console.log("Creating README...");
-        return writeToFile('./README.md', generateMarkdown(data));
+        return writeToFile('./dist/README.md', generateMarkdown(data));
     })
     .catch (err => console.log(err));
 };
