@@ -32,7 +32,7 @@ install npm
 
 ![Screen Shot 2021-07-16 at 11 07 26 AM](https://user-images.githubusercontent.com/78171259/125969126-026861b1-a26b-4dfa-b7f1-32768f9e1c6f.png)
 
-For usage demo please view following link:
+For usage demo please view following link: https://drive.google.com/file/d/1B7-DrNE-THwCwRBz_ETByDLL5ckFmOWl/view
 
 ## License
     
