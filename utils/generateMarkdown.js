@@ -54,7 +54,7 @@ ${renderLicenseLink(data.license)}
 
 ## Installation
 
-To install program please run:
+To install the program please run:
 
 \`\`\`
 ${data.installation}
@@ -72,7 +72,7 @@ ${data.contribution}
 
 ## Tests
 
-To test, please run:
+To test the program, please run:
 
 \`\`\`
 ${data.test}
@@ -80,7 +80,7 @@ ${data.test}
 
 ## Questions
 
-To view my other work, go to: 
+To view my other work, check out my GitHub!: 
 [${data.github}](https://github.com/${data.github}/)
 
 For questions and inquiries contact me at:
