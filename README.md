@@ -25,7 +25,7 @@ A command-line application built with node.JS that dynamically generates a profe
 To install program dependencies please run the following code from the command line:
 
 ```
-install npm
+npm install
 ```
 
 ## Usage
